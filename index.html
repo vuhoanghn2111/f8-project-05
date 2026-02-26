@@ -87,20 +87,29 @@
         />
         <link rel="manifest" href="./asset/img/favicon/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="./asset/img/favicon/ms-icon-144x144.png" />
+        <meta
+            name="msapplication-TileImage"
+            content="./asset/img/favicon/ms-icon-144x144.png"
+        />
         <meta name="theme-color" content="#ffffff" />
     </head>
-    <body style="height: 20000px;">
+    <body style="height: 20000px">
         <header class="header">
             <div class="container">
                 <div class="header__inner">
                     <a href="#">
-                        <img src="./asset/img/Logo.svg" alt="logo" class="logo">
+                        <img
+                            src="./asset/img/Logo.svg"
+                            alt="logo"
+                            class="logo"
+                        />
                     </a>
                     <nav class="header__nav">
                         <ul class="header__list">
                             <li class="header__item">
-                                <a href="#!" class="header__link header__active">Home</a>
+                                <a href="#!" class="header__link header__active"
+                                    >Home</a
+                                >
                             </li>
                             <li class="header__item">
                                 <a href="#!" class="header__link">Products</a>
@@ -120,7 +129,69 @@
                 </div>
             </div>
         </header>
-        <main></main>
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <!-- Hero content -->
+                        <section class="hero__content">
+                            <p class="hero__sub-heading section__sub-heading">
+                                Digital Smart Wallet
+                            </p>
+                            <h1 class="hero__heading">
+                                Digital <strong>Payment</strong> For Everyone.
+                            </h1>
+                            <p class="hero__desc section__desc-h2">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+                            <form action="" class="hero__form">
+                                <input
+                                    type="email"
+                                    name=""
+                                    id=""
+                                    placeholder="Your email address"
+                                    class="hero__form-input"
+                                />
+                                <button type="submit" class="hero__submit btn">
+                                    Get Started
+                                </button>
+                            </form>
+                            <p class="hero-form__desc">
+                                *We’ll respect the inbox and never share your
+                                email.
+                            </p>
+                        </section>
+                        <!-- Hero media -->
+                        <figure class="hero__media">
+                            <img
+                                src="./asset/img/hero/Mobile Screen.svg"
+                                alt="hero"
+                                class="hero__img"
+                            />
+                            <div class="hero-interest">
+                                <span class="hero__quantity">0%</span>
+                                <span class="hero-interest__text">Interest</span>
+                            </div>
+                            <div class="hero-secured">
+                                <img src="./asset/img/hero/price.svg" alt="secured" class="hero-secured__img">
+                                <div class="hero-secured__info">
+                                    <span class="hero-secured__price">$1.310</span>
+                                    <span class="hero-secured__text">SECURED FUNDS</span>
+                                </div>
+                            </div>
+                            <div class="hero-deposit">
+                                <img src="./asset/img/hero/deposit.svg" alt="deposit" class="hero-deposit__img">
+                                <span class="hero-deposit__text">Deposit</span>
+                                <span class="hero-deposit__cash">$32000</span>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer></footer>
     </body>
 </html>
