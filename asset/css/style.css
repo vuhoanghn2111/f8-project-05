@@ -382,7 +382,7 @@ button {
 .payment__inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 130px;
 }
 .payment__heading {
     margin-top: 12px;
@@ -418,11 +418,14 @@ button {
     cursor: pointer;
 }
 .payment-card {
+    flex: 1;
+    position: relative;
+}
+.payment-card__container {
     width: 482px;
     height: 322px;
     border-radius: 20px;
-    background: #8476e3;
-    position: relative;
+    background: linear-gradient(to right,#8679e4 0%,#7264d6 100%);
 }
 .payment-card__inner {
     padding: 38px;
@@ -471,6 +474,9 @@ button {
     display: flex;
     align-items: center;
     gap: 14px;
+    position: absolute;
+    right: 0;
+    top: -48px;
 }
 .payment__send-bg {
     width: 40px;
@@ -512,4 +518,42 @@ button {
     font-size: 10px;
     font-weight: 400;
     line-height: normal;
+}
+.payment__income {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: #439f90;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 257px;
+    z-index: 1;
+}
+.income {
+    display: block;
+    margin-top: 14px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.income-price {
+    margin-top: 6px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.payment__deco {
+    position: absolute;
+}
+.payment__deco-1 {
+    top: 3px;
+    left: 2px;
+}
+.payment__deco-2 {
+    bottom: 0;
+    right: 88px;
 }
