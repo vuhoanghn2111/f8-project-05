@@ -407,7 +407,8 @@ button {
     background: var(--primary-color);
     margin-right: 12px;
 }
-.payment-action__btn,.feature-action__btn {
+.payment-action__btn,
+.feature-action__btn {
     min-width: 149px;
     height: 58px;
     border-radius: 8px;
@@ -654,4 +655,106 @@ button {
     border-radius: 50%;
     background: var(--primary-color);
     margin-right: 12px;
+}
+/* Testimonial */
+.testimonial-top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonial__heading {
+    margin-top: 12px;
+}
+.testimonial__desc {
+    margin-top: 18px;
+    width: 435px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+.testimonial-bot {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.testimonial__card,
+.testimonial__author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial__author {
+    margin-top: 80px;
+}
+.testimonial__post {
+    --border-color: #dfe2e8;
+    width: 570px;
+    height: 254px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+.testimonial__post::after {
+    content: "";
+    display: inline-block;
+    width: 67px;
+    height: 67px;
+    background: #fff;
+    rotate: 135deg;
+    position: absolute;
+    bottom: -34px;
+    border-top-right-radius: 5px;
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+.testimonial__post:hover {
+    filter: drop-shadow(0 22px 54px rgba(0, 0, 0, 0.07));
+    border: none;
+}
+.testimonial__post:hover::after {
+    border: none;
+}
+.testimonial__text {
+    width: 514px;
+    color: #696d76;
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 34px; /* 154.545% */
+}
+.testimonial__bg {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background: #4ab5e3;
+}
+.testimonial__card:nth-child(2) .testimonial__bg {
+    background: #439f90;
+}
+.testimonial__avt {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 10px;
+}
+.testimonial__name {
+    margin-top: 20px;
+    color: #070052;
+    text-align: center;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; /* 138.462% */
+}
+.testimonial__work {
+    margin-top: 2px;
 }
